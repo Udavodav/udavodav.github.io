@@ -32,26 +32,26 @@
         <div class="list-title first-line">ДОСТАВКА</div>
     </div>
     <div >
-        <form action="#" method="post">
+        <form action="#" method="post" id="order_form">
             <div class="mb-3">
                 <label for="input_surname" class="form-label txt-bold">Фамилия</label>
-                <input type="text" class="form-control" id="input_surname" placeholder="Фамилия">
+                <input type="text" class="form-control" name="input_surname" id="input_surname" placeholder="Фамилия" required>
             </div>
             <div class="mb-3">
                 <label for="input_name" class="form-label txt-bold">Имя</label>
-                <input type="text" class="form-control" id="input_name" placeholder="Имя">
+                <input type="text" class="form-control" name="input_name" id="input_name" placeholder="Имя" required>
             </div>
             <div class="mb-3">
                 <label for="input_patronymic" class="form-label txt-bold">Отчество</label>
-                <input type="text" class="form-control" id="input_patronymic" placeholder="Отчество">
+                <input type="text" class="form-control" name="input_patronymic" id="input_patronymic" placeholder="Отчество">
             </div>
             <div class="mb-3">
                 <label for="input_phone" class="form-label txt-bold">Номер телефона</label>
-                <input type="tel" id="input_phone" class="form-control" placeholder="+7 (999) 99 99 999">
+                <input type="tel" id="input_phone" name="input_phone" class="form-control" placeholder="+7 (999) 99 99 999" required>
             </div>
             <div class="mb-3">
                 <label for="input_address" class="form-label txt-bold">Адрес доставки</label>
-                <input type="text" class="form-control" id="input_address" placeholder="Адрес доставки">
+                <input type="text" class="form-control" name="input_address" id="input_address" placeholder="Адрес доставки" required>
             </div>
             <div class="mb-5">
                 <button type="submit" class="px-5 btn-back">Оформить</button>
@@ -76,6 +76,9 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="js/jquery.maskedinput.min.js"></script>
+<script src="js/script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
 
 <script>
     $(document).ready(function() {
