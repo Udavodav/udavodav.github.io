@@ -16,11 +16,11 @@ form.addEventListener("submit", function (event){
     if(!(validate(data.surname, "Фамилия") &&
     validate(data.name, "Имя") &&
     validate(data.patronymic, "Отчество"))){
-        return
+
+    }else{
+        console.log(data);
     }
 
-    console.log(data);
-    alert("Данные отправлены");
 });
 
 function validate(data, field) {
@@ -30,3 +30,6 @@ function validate(data, field) {
     }
     return true;
 }
+
+
+
